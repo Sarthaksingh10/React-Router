@@ -7,7 +7,7 @@ function App() {
   return (
     <>
    <Header/>
-   <Outlet/>
+   <Outlet/>      {/* we can not directly use app inside the router  so that we have used Outlet here. It is a placeholder for nested routes */}
    <Footer/>
    
     </>

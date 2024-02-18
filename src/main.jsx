@@ -10,10 +10,10 @@ import Contact from './components/Contact/Contact'
 import About from './components/AboutUs/Aboutus'
 import User from './components/User/User'
 import Github, { githubinfoloader } from './components/GitHub/Github'
- const router=createBrowserRouter(
+ const router=createBrowserRouter(       /* Creating a browser based router*/
   [{path:'/',
-    element:<App/>,
-    children:[
+    element:<App/>,           /*  Defining the main component which will contain all other component*/
+    children:[                  /* Children is used to define nested routes in react-router-dom*/
       {
         path:"",
         element:<Home/>
@@ -42,6 +42,6 @@ import Github, { githubinfoloader } from './components/GitHub/Github'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router}/>   { /*  Providing the created router to our app */}
   </React.StrictMode>,
 )

@@ -71,9 +71,9 @@ export default function Header() {
                 </NavLink>
               </li>
               <li>
-                <NavLink
+                <NavLink       /* This provide more styling feature to the check with checking if it is active or not */
                 to="/Github"
-                  className={({isActive}) =>
+                  className={({isActive}) =>             /* isActive will change the styling if that particular link is active */
                     `block py-2 pr-4 pl-3 duration-200 border-b
                     ${isActive?"text-red-600":"text-gray-600"}
                      border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent 
